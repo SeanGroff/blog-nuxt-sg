@@ -1,51 +1,29 @@
 <template>
   <v-app>
+
     <v-navigation-drawer
       v-model="drawer"
       fixed
       app
     >
       <v-list dense>
-        <v-list-tile @click="drawer = false">
-          <nuxt-link
-            to="/"
-            exact>
-            <v-list-tile-action>
-              <v-icon>home</v-icon>
-            </v-list-tile-action>
-            <v-list-tile-content>
-              <v-list-tile-title>Home</v-list-tile-title>
-            </v-list-tile-content>
-          </nuxt-link>
-        </v-list-tile>
-
-        <v-list-tile @click="drawer = false">
-          <nuxt-link
-            to="/contact"
-            exact>
-            <v-list-tile-action>
-              <v-icon>contact_mail</v-icon>
-            </v-list-tile-action>
-            <v-list-tile-content>
-              <v-list-tile-title>Contact</v-list-tile-title>
-            </v-list-tile-content>
-          </nuxt-link>
-        </v-list-tile>
-
-        <v-list-tile @click="drawer = false">
-          <nuxt-link
-            to="/blog"
-            exact>
-            <v-list-tile-action>
-              <v-icon>book</v-icon>
-            </v-list-tile-action>
-            <v-list-tile-content>
-              <v-list-tile-title>Blog</v-list-tile-title>
-            </v-list-tile-content>
-          </nuxt-link>
+        <v-list-tile
+          v-for="link in links"
+          :key="link.title"
+          :to="link.url"
+          exact
+          nuxt
+          @click="onNavLinkClick">
+          <v-list-tile-action>
+            <v-icon>{{ link.icon }}</v-icon>
+          </v-list-tile-action>
+          <v-list-tile-content>
+            <v-list-tile-title>{{ link.title }}</v-list-tile-title>
+          </v-list-tile-content>
         </v-list-tile>
       </v-list>
     </v-navigation-drawer>
+
     <v-toolbar
       color="primary"
       dark
@@ -54,6 +32,7 @@
       <v-toolbar-side-icon @click.stop="drawer = !drawer"/>
       <v-toolbar-title>SG</v-toolbar-title>
     </v-toolbar>
+
     <v-content>
       <v-container
         fluid
@@ -65,6 +44,7 @@
         </v-layout>
       </v-container>
     </v-content>
+
     <v-footer
       color="primary"
       app
@@ -80,11 +60,23 @@ export default {
   data() {
     return {
       drawer: null,
+      links: [
+        { title: 'Home', icon: 'home', url: '/' },
+        { title: 'Contact', icon: 'contact_mail', url: '/contact' },
+        { title: 'Blog', icon: 'book', url: '/blog' },
+      ],
     }
   },
   computed: {
     year() {
       return new Date().getFullYear()
+    },
+  },
+  methods: {
+    onNavLinkClick() {
+      if (!this.$vuetify.breakpoint.mdAndUp) {
+        this.drawer = false
+      }
     },
   },
 }
