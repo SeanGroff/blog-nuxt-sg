@@ -43,7 +43,7 @@ module.exports = {
   /*
   ** Nuxt.js modules
   */
-  modules: ['@nuxtjs/blog', '@nuxtjs/axios'],
+  modules: ['@nuxtjs/axios', 'nuxt-blog-module'],
 
   /*
   ** Build configuration
