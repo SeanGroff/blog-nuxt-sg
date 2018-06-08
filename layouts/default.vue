@@ -13,7 +13,7 @@
           :to="link.url"
           exact
           nuxt
-          @click="onNavLinkClick">
+          @click="close">
           <v-list-tile-action>
             <v-icon>{{ link.icon }}</v-icon>
           </v-list-tile-action>
@@ -73,7 +73,7 @@ export default {
     },
   },
   methods: {
-    onNavLinkClick() {
+    close() {
       if (!this.$vuetify.breakpoint.mdAndUp) {
         this.drawer = false
       }
@@ -82,10 +82,73 @@ export default {
 }
 </script>
 
-<style scoped>
+<style>
 a {
-  display: flex;
-  flex: 1 1 auto;
   text-decoration: none;
+}
+
+article[slug] {
+  margin-bottom: 32px;
+}
+
+article[slug] a {
+  font-size: 24px;
+  font-weight: 600px;
+}
+
+article[slug] div {
+  margin-bottom: 8px;
+}
+
+article[slug] p {
+  color: #2c3e50;
+  font-size: 16px;
+}
+
+.blog-article-container .blog-article {
+  color: #2c3e50;
+  font-size: 16px;
+  max-width: 280px;
+  margin: 0 auto;
+}
+
+@media (min-width: 640px) {
+  .blog-article-container .blog-article {
+    max-width: 740px;
+  }
+}
+
+.blog-article-container .blog-article-title {
+  color: rgb(44, 62, 80);
+  margin-top: -24px;
+  margin-bottom: 16px;
+  padding-top: 74px;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+.blog-article-container .blog-article-meta {
+  margin-bottom: 8px;
+}
+
+.blog-article-container .blog-article-content p img {
+  display: block;
+  max-width: 280px;
+  margin: 0 auto;
+}
+
+@media (min-width: 640px) {
+  .blog-article-container .blog-article-content p img {
+    max-width: 640px;
+  }
+}
+
+.blog-article-container .blog-article-content h2 {
+  display: block;
+  color: rgb(44, 62, 80);
+  font-size: 26px;
+  font-weight: 600;
+  padding: 24px 0;
 }
 </style>

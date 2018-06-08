@@ -12,7 +12,7 @@ What is this React you speak of? If you're reading this article I assume you've 
 
 > TL;DR React is a JavaScript library created by Facebook for building user interfaces.
 
-### Getting Started
+## Getting Started
 
 Thanks to [**Create-React-App**][1] you now have two options to learning React without first learning [**Webpack**][2]. After you complete the [**Codepen**][3] challenges below, use the **Create-React-App** build utility for your future React app's.
 
@@ -22,17 +22,19 @@ The title of this article is \_How I Learned React and how you can too… \_so i
 
 Try to make it as far as you can through [**React's Documentation Tutorial**][4]. Once you're bored, move on. You will revisit these docs when you start coding React apps.
 
-> Ermahgerd it look's like React relies heavily on ES2015 syntax?! I wanted you to see this for yourself. Take the time to learn the basics of ES2015 **_before_** learning React. **Learn.co** has a great intro** [\*\***here\*\*][5].
+> Ermahgerd it look's like React relies heavily on ES2015 syntax?! I wanted you to see this for yourself. Take the time to learn the basics of ES2015 **_before_** learning React. [**Learn.co**][5] has a great intro.
 
 > It's very important when building React applications to "**Think in React**."
 
 Take the time to identify reusable components, stateful and stateless components. [**Thinking in React**][6] does a great job of teaching you how to accomplish this task. Components, props, state, render, blah blah blah you'll understand all this React speak after you start coding.
 
-### Ok, you're tired of reading and want to code? Fire up a new Pen in [**Codepen**][3].
+## Want to code?
+
+Ok, you're tired of reading and want to code? Fire up a new Pen in [**Codepen**][3].
 
 Below are 5 challenges I did to learn React. If you complete all 5 challenges, you're more than ready to begin working on larger React projects…sort of…
 
-> Enable the **Babel preprocessor** and make sure to add **React** and** React-DOM** using the **Quick Add **dropdown menu under the **Add External JavaScript** section. **Save and close**.
+> Enable the **Babel preprocessor** and make sure to add **React** and **React-DOM** using the **Quick Add** dropdown menu under the **Add External JavaScript** section. **Save and close**.
 
 ![][7]
 
@@ -56,7 +58,7 @@ This app takes the input from the text input field and outputs your input in rea
 
 > Again, use the React Doc's to figure this out without peeking at my code. Only look at my code if you're stumped and have exhausted all of your resources.
 
-I used Bootstrap to style the app. This is optional, but this would be an ideal time to **L[\*\***earn Bootstrap\*\*][11] in React!
+I used Bootstrap to style the app. This is optional, but this would be an ideal time to [**Learn Bootstrap**][11] in React!
 
 My example [**Hello Visitor pen**][12].
 
@@ -72,27 +74,27 @@ My example [**Fizz Buzz pen**][13], don't cheat!
 
 > Challenge #4 — Markdown Previewer
 
-The last 2 challenges can be found over at [**freeCodeCamp**][14]. You can continue to use **Codepen**, but I would fire up **Create-React-App** and maintain the rest of your projects on [**Github**][15]**.**
+The last 2 challenges can be found over at [**freeCodeCamp**][14]. You can continue to use **Codepen**, but I would fire up **Create-React-App** and maintain the rest of your projects on [**Github**][15].
 
 Here is the link to the **freeCodeCamp** challenge. [**Build a Markdown Previewer**][16].
 
-> Pro-tip: Use **[Marked**][17] to parse the **Markdown** text.
+> Pro-tip: Use [**Marked**][17] to parse the **Markdown** text.
 
 > Challenge #5 — Camper Leaderboard
 
 For the final challenge you will build a Leaderboard app. You will need to access the Leaderboard data using the provided endpoints. You will need to grab data for pretty much every React app you build so this one is important.
 
-Here is the link to the **freeCodeCamp** challenge. **[Build a Camper Leaderboard**][18].
+Here is the link to the **freeCodeCamp** challenge. [**Build a Camper Leaderboard**][18].
 
-> Pro-tip: Use **[Axios**][19]\*\* \*\*to perform your _GET_ requests to access the Leaderboard data.
+> Pro-tip: Use [**Axios**][19]to perform your _GET_ requests to access the Leaderboard data.
 
-### Congrats!
+## Congrats!
 
 If you've made it to the part in the article you've hopefully completed all 5 React challenges. If you didn't keep at it, this could take you a week or so.
 
 Earlier in this post I mentioned you're "sort of" ready to work on larger React projects. Larger React projects will likely require **routing** and **global state**.
 
-You will want to learn **[React-Router** ][20]to handle your apps routing. If your app needs Global State and is moderately complex you'll want to learn **[Redux**][21].
+You will want to learn [**React-Router**][20] to handle your apps routing. If your app needs Global State and is moderately complex you'll want to learn [**Redux**][21].
 
 > Don't make your app more complex if it doesn't need to be. Use Redux as needed!
 
