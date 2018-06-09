@@ -87,20 +87,20 @@ a {
   text-decoration: none;
 }
 
-article[slug] {
-  margin-bottom: 32px;
+.article--preview {
+  margin-bottom: 32px !important;
 }
 
-article[slug] a {
+.article--title {
   font-size: 24px;
-  font-weight: 600px;
+  font-weight: 600;
 }
 
-article[slug] div {
+.article--meta {
   margin-bottom: 8px;
 }
 
-article[slug] p {
+.article--description {
   color: #2c3e50;
   font-size: 16px;
 }

@@ -4254,9 +4254,9 @@ number-is-nan@^1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/number-is-nan/-/number-is-nan-1.0.1.tgz#097b602b53422a522c1afb8790318336941a011d"
 
-nuxt-blog-module@^0.0.1-8:
-  version "0.0.1-8"
-  resolved "https://registry.yarnpkg.com/nuxt-blog-module/-/nuxt-blog-module-0.0.1-8.tgz#5c6c04505f3bc6318b59629eb74da0f3a527fec6"
+nuxt-blog-module@^0.0.2:
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/nuxt-blog-module/-/nuxt-blog-module-0.0.2.tgz#3a6e563be9f614c3ee592c96c398580bc9ceb9bd"
   dependencies:
     babel-plugin-transform-object-rest-spread "^6.23.0"
     babel-polyfill "^6.23.0"
