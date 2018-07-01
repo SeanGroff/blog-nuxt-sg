@@ -18,7 +18,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="postcss" scoped>
 .whiteText {
   color: var(--lightText);
 }

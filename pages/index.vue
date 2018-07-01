@@ -21,7 +21,7 @@ export default {
 }
 </script>
 
-<style>
+<style lang="postcss" scoped>
 .wrapper {
   height: 100%;
   width: 100%;

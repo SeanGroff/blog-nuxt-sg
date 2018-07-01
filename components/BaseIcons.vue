@@ -38,7 +38,7 @@
   </div>
 </template>
 
-<style scoped>
+<style lang="postcss" scoped>
 .icons {
   display: flex;
   flex-direction: row;

@@ -31,7 +31,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="postcss" scoped>
 .navBar {
   display: flex;
   position: absolute;

@@ -21,7 +21,7 @@ export default {
 </script>
 
 
-<style scoped>
+<style lang="postcss" scoped>
 .hero {
   background: linear-gradient(
       var(--transparentDarkBlue),

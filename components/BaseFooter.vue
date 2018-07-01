@@ -1,11 +1,11 @@
 <template>
   <footer class="footer">
-    <div class="footer--content">
+    <div class="content">
       <base-logo />
-      <p class="footer--copyright">
+      <p class="copyright">
         Copyright © {{ year }}
         <nuxt-link
-          class="footer--link"
+          class="link"
           to="/">
           sean groff
         </nuxt-link>
@@ -34,7 +34,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="postcss" scoped>
 .footer {
   display: flex;
   justify-content: center;
@@ -46,21 +46,21 @@ export default {
   z-index: 5;
 }
 
-.footer--content {
+.content {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.footer--copyright {
+.copyright {
   font-size: 14px;
   font-family: Lora-Regular;
   line-height: 30px;
   margin: 24px 0;
 }
 
-.footer--link {
+.link {
   color: var(--lighterBlueText);
   font-size: 14px;
   font-family: Lora-Regular;
@@ -70,7 +70,7 @@ export default {
   transition: color 0.2s linear;
 }
 
-.footer--link:hover {
+.link:hover {
   cursor: pointer;
   color: var(--hoverText);
   transition: color 0.2s linear;

@@ -17,7 +17,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="postcss" scoped>
 .default-layout {
   height: 100vh;
   position: relative;

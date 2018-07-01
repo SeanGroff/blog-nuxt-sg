@@ -6,7 +6,7 @@
   </nuxt-link>
 </template>
 
-<style scoped>
+<style lang="postcss" scoped>
 .logo {
   color: var(--lightText);
   font-size: 18px;

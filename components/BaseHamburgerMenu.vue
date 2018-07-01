@@ -6,7 +6,7 @@
   </div>
 </template>
 
-<style scoped>
+<style lang="postcss" scoped>
 .menu {
   display: block;
   position: relative;
