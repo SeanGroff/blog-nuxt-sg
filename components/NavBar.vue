@@ -4,6 +4,7 @@
       <base-logo />
     </div>
     <div class="rightColumn">
+      <base-link nav-route="blog">blog</base-link>
       <base-link nav-route="about">about</base-link>
       <base-link nav-route="portfolio">portfolio</base-link>
       <base-link nav-route="contact">contact</base-link>
