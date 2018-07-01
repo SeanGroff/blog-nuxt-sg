@@ -44,7 +44,7 @@ Since this isn't a tutorial, no more spoon feeding. As you're coding, use the do
 
 The docs have you feeling down? Don't quite feel ready to start coding?
 
-> A great tutorial I used to compliment my learning of React is [**React.js Fundamentals**][8] by [**Tyler McGinnis**][9]**.**
+> A great tutorial (and free!) to understand and learn React is [**The Beginner's Guide to React**][8] by [**Kent C. Dodds**][9]**.**
 
 > Challenge #1 — Hello World
 
@@ -107,8 +107,8 @@ Thanks for reading!!😀
 [5]: https://learn.co/lessons/intro-to-es2015
 [6]: https://facebook.github.io/react/docs/thinking-in-react.html
 [7]: https://cdn-images-1.medium.com/max/1600/1*EAGZyyFKWlqirVqNKZ0tZQ.png
-[8]: https://online.reacttraining.com/p/reactjsfundamentals
-[9]: https://twitter.com/tylermcginnis33
+[8]: https://egghead.io/courses/the-beginner-s-guide-to-react
+[9]: https://twitter.com/kentcdodds
 [10]: http://codepen.io/sgroff04/pen/ObMVEE
 [11]: http://getbootstrap.com/
 [12]: http://codepen.io/sgroff04/full/zBYKLP/
