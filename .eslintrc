@@ -9,9 +9,21 @@
     "ecmaVersion": 2017,
     "sourceType": "module"
   },
-  "extends": ["plugin:vue/recommended"],
-  "plugins": ["vue"],
+  "extends": [
+    "plugin:vue/recommended"
+  ],
+  "plugins": [
+    "vue"
+  ],
   "rules": {
-    "no-trailing-spaces": "error"
+    "no-trailing-spaces": "error",
+    "space-before-function-paren": [
+      "error",
+      {
+        "anonymous": "never",
+        "named": "never",
+        "asyncArrow": "never"
+      }
+    ]
   }
 }

@@ -1,0 +1,111 @@
+@import './LoraBold.css';
+@import './LoraItalic.css';
+@import './LoraRegular.css';
+@import './OpenSansBold.css';
+@import './OpenSansItalic.css';
+@import './OpenSansLight.css';
+@import './OpenSansRegular.css';
+
+/* Color */
+:root {
+  --white: #ecf0f1;
+  --red: #e74c3c;
+  --darkBlue: #2c3e50;
+  --lightBlue: #3498db;
+  --lighterBlue: #2980b9;
+  --transparentDarkBlue: rgba(44, 62, 80, 0.8);
+  --bgColorDark: var(--darkBlue);
+  --bgColorLight: var(--white);
+  --lightText: var(--white);
+  --darkText: var(--darkBlue);
+  --lightBlueText: var(--lightBlue);
+  --lighterBlueText: var(--lighterBlue);
+  --ctaText: var(--red);
+  --hoverText: var(--lightBlue);
+  --accentColor: var(--red);
+
+  /* Layout */
+
+  --sectionPadding: 100px 15px;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Blog */
+
+.article--preview {
+  margin-bottom: 32px !important;
+}
+
+.article--title {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.article--meta {
+  margin-bottom: 8px;
+}
+
+.article--description {
+  color: #2c3e50;
+  font-size: 16px;
+}
+
+.blog-article-container .blog-article {
+  color: #2c3e50;
+  font-size: 16px;
+  max-width: 280px;
+  margin: 0 auto;
+}
+
+@media (min-width: 992px) {
+  .blog-article-container .blog-article {
+    max-width: 740px;
+  }
+}
+
+.blog-article-container .blog-article-title {
+  color: rgb(44, 62, 80);
+  margin-top: -24px;
+  margin-bottom: 16px;
+  padding-top: 74px;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+.blog-article-container .blog-article-meta {
+  margin-bottom: 8px;
+}
+
+.blog-article-container .blog-article-content p img {
+  display: block;
+  max-width: 280px;
+  margin: 0 auto;
+}
+
+@media (min-width: 992px) {
+  .blog-article-container .blog-article-content p img {
+    max-width: 640px;
+  }
+}
+
+.blog-article-container .blog-article-content h2 {
+  display: block;
+  color: rgb(44, 62, 80);
+  font-size: 26px;
+  font-weight: 600;
+  padding: 24px 0;
+}

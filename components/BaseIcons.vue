@@ -1,0 +1,61 @@
+<template>
+  <div class="icons">
+    <a
+      class="icon"
+      rel="noopener">
+      <i
+        class="fa fa-github"
+        aria-hidden="true" />
+    </a>
+    <a
+      class="icon"
+      rel="noopener">
+      <i
+        class="fa fa-twitter"
+        aria-hidden="true" />
+    </a>
+    <a
+      class="icon"
+      rel="noopener">
+      <i
+        class="fa fa-linkedin"
+        aria-hidden="true" />
+    </a>
+    <a
+      class="icon"
+      rel="noopener">
+      <i
+        class="fa fa-medium"
+        aria-hidden="true" />
+    </a>
+    <a
+      class="icon"
+      rel="noopener">
+      <i
+        class="fa fa-codepen"
+        aria-hidden="true" />
+    </a>
+  </div>
+</template>
+
+<style scoped>
+.icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon {
+  color: var(--lightText);
+  font-size: 24px;
+  padding: 0 8px;
+  transition: color 0.2s linear;
+}
+
+.icon:hover {
+  cursor: pointer;
+  color: var(--hoverText);
+  transition: color 0.2s linear;
+}
+</style>

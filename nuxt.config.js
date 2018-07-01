@@ -15,14 +15,7 @@ module.exports = {
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: pkg.description },
     ],
-    link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      {
-        rel: 'stylesheet',
-        href:
-          'https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons',
-      },
-    ],
+    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   },
 
   /*
@@ -33,22 +26,23 @@ module.exports = {
   /*
   ** Global CSS
   */
-  css: ['vuetify/src/stylus/main.styl'],
+  css: ['@/node_modules/normalize.css/normalize.css', '@/css/main.css'],
 
   /*
   ** Plugins to load before mounting the App
   */
-  plugins: ['@/plugins/vuetify'],
+  plugins: [],
 
   /*
   ** Nuxt.js modules
   */
-  modules: ['@nuxtjs/axios', 'nuxt-blog-module'],
+  modules: ['@nuxtjs/axios', 'nuxt-blog-module', '@nuxtjs/font-awesome'],
 
   /*
   ** Build configuration
   */
   build: {
+    postcss: [require('postcss-import'), require('postcss-custom-properties')],
     /*
     ** You can extend webpack config here
     */
@@ -65,7 +59,7 @@ module.exports = {
       if (ctx.isServer) {
         config.externals = [
           nodeExternals({
-            whitelist: [/^vuetify/],
+            whitelist: [],
           }),
         ]
       }
