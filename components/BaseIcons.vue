@@ -1,6 +1,8 @@
 <template>
   <div class="icons">
     <a
+      href="https://www.github.com/SeanGroff"
+      target="_blank"
       class="icon"
       rel="noopener">
       <i
@@ -8,6 +10,8 @@
         aria-hidden="true" />
     </a>
     <a
+      href="https://www.twitter.com/_SeanGroff"
+      target="_blank"
       class="icon"
       rel="noopener">
       <i
@@ -15,6 +19,8 @@
         aria-hidden="true" />
     </a>
     <a
+      href="https://www.linkedin.com/in/sgroff"
+      target="_blank"
       class="icon"
       rel="noopener">
       <i
@@ -22,6 +28,8 @@
         aria-hidden="true" />
     </a>
     <a
+      href="https://www.medium.com/@sgroff04"
+      target="_blank"
       class="icon"
       rel="noopener">
       <i
@@ -29,6 +37,8 @@
         aria-hidden="true" />
     </a>
     <a
+      href="https://codepen.io/sgroff04"
+      target="_blank"
       class="icon"
       rel="noopener">
       <i

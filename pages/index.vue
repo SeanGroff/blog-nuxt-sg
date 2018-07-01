@@ -2,6 +2,8 @@
   <div class="wrapper">
     <base-me />
     <base-about-preview />
+    <base-portfolio-preview />
+    <base-contact-preview />
     <base-footer />
   </div>
 </template>
@@ -9,6 +11,8 @@
 <script>
 import BaseMe from '@/components/BaseMe'
 import BaseAboutPreview from '@/components/BaseAboutPreview'
+import BasePortfolioPreview from '@/components/BasePortfolioPreview'
+import BaseContactPreview from '@/components/BaseContactPreview'
 import BaseFooter from '@/components/BaseFooter'
 
 export default {
@@ -16,6 +20,8 @@ export default {
   components: {
     BaseMe,
     BaseAboutPreview,
+    BasePortfolioPreview,
+    BaseContactPreview,
     BaseFooter,
   },
 }
